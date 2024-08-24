@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Helvetica Fonts */
+@font-face {
+  font-family: "Helvetica";
+  src: url("./../../public/fonts/Helvetica/Helvetica.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url("./../../public/fonts/Helvetica/Helvetica-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica-BoldOblique";
+  src: url("./../../public/fonts/Helvetica/Helvetica-BoldOblique.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica-Light";
+  src: url("./../../public/fonts/Helvetica/Helvetica-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica-Oblique";
+  src: url("./../../public/fonts/Helvetica/Helvetica-Oblique.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Roboto Fonts */
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("./../../public/fonts/Roboto/Roboto-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-BlackItalic";
+  src: url("./../../public/fonts/Roboto/Roboto-BlackItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./../../public/fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-BoldItalic";
+  src: url("./../../public/fonts/Roboto/Roboto-BoldItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url("./../../public/fonts/Roboto/Roboto-Italic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("./../../public/fonts/Roboto/Roboto-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-LightItalic";
+  src: url("./../../public/fonts/Roboto/Roboto-LightItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("./../../public/fonts/Roboto/Roboto-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-MediumItalic";
+  src: url("./../../public/fonts/Roboto/Roboto-MediumItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./../../public/fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("./../../public/fonts/Roboto/Roboto-Thin.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-ThinItalic";
+  src: url("./../../public/fonts/Roboto/Roboto-ThinItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
