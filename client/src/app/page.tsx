@@ -1,10 +1,5 @@
+import LoginSignUp from "../components/PageComponents/LoginSignUp";
 
 export default function Home() {
-  return (
-    <main>
-      <div>
-        Here the landing page will be displayed
-      </div>
-    </main>
-  );
+  return <LoginSignUp />;
 }
